@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://www.dafontfree.net/embed/aHAtaW1wYWN0LWJvbGQmZGF0YS8xMS9oLzYxNDE2L0hQLUltcGFjdC50dGY" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div class="h-screen bg-[#11847f] w-full">
+    <!-- navbar -->
+    <div class="w-full h-[15%] flex justify-center items-center">
+      <div class="h-full w-full flex justify-center items-center gap-32 text-white font-medium font-mono tracking-wide text-lg max-sm:hidden max-md:hidden max-sm:h-full max-md:h-full max-w-[1024px]">
+        <a href="#about-me">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="h-[85%] w-full flex justify-center items-center gap-22 max-sm:flex-col max-md:flex-col">
+      <div class="relative flex justify-center h-full w-full items-center px-12">
+        <img class="absolute mix-blend-multiply h-full w-full " src="./splash.png" alt="" />
+        <img src="./user.png" class="h-full w-full relative z-10 object-contain" alt="" />
+      </div>
+      <div class="flex flex-col h-full w-full justify-center items-center justify-evenly">
+        <div>
+          <h1 class="text-white font-semibold text-[9rem]  max-md:text-[4rem] max-lg:text-[2rem] max-xl:text-[5.5rem] tracking-wider font-sans">
+            Gayathri Upadhya
+          </h1>
+        </div>
+        <a href="#about-me" class="flex justify-center items-center h-[50px] w-[50px] bg-transparent border-2 border-white rounded-full max-md:mt-10">
+          <i class="fa fa-angle-double-down" style="color: white; font-size: x-large" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- navbar -->
+    <!-- about me -->
+    <div id="about-me" class="h-screen bg-[#11847f] w-full">
+        <div
+          class="flex justify-center items-center justify-evenly h-full w-full max-sm:flex-col max-md:flex-col max-sm:h-full max-md:h-full">
+          <div
+            class="flex flex-col justify-center items-center text-[#ffff01] font-mono font-bold tracking-tight max-md:pt-20">
+            <h1 class="text-[9rem] mb-0 leading-none max-sm:text-[3rem] max-md:text-[4rem]  max-lg:text-[4rem] max-xl:text-[5.5rem]">About</h1>
+            <h1 class="text-[18rem] mb-0 leading-none max-sm:text-[3rem] max-md:text-[4rem]  max-lg:text-[4rem] max-xl:text-[5.5rem]">ME</h1>
+          </div>
+
+          <div class="w-[50%] text-white text-lg font-medium tracking-wide max-sm:text-sm max-md: text-md">
+            <p>
+              I am a second year communication design student, studying in Atlas
+              Skilltech University. I take great interest in graphic designing
+              and also aspire to study film making for my further studies. My
+              other interests include sketching, singing and photography. I have
+              interned twice for a digital marketing role at two different
+              places, Pinklemonade and Manimal Tales.
+            </p>
+          </div>
+        </div>
+      </div>
+    <!-- about me -->
+    <div id="work" class="h-screen bg-[#ffff01] w-full flex items-center justify-center">
+      <div class="flex flex-row-reverse justify-center items-center justify-evenly w-full max-sm:flex-col max-md:flex-col max-lg:flex-col max-md:pt-10">
+        <div class="flex flex-col justify-center items-center text-[#11847f] font-mono font-bold tracking-tight">
+          <h1 class="text-[9rem] mb-0 leading-none max-sm:text-[3rem] max-md:text-[4rem] max-lg:text-[4rem] max-xl:text-[5.5rem]">Work</h1>
+          <div id="text-container" class="text-center  max-md:w-[300px]">
+            <p id="text" class="text-white text-lg  font-medium tracking-wide text-[#11847f]">
+              <span class="block text-[1.5rem]  max-md:text-lg font-bold "></span>
+            </p>
+          </div>
+          
+        </div>
+        <div id="carousel-container" class="relative ml-10 max-sm:h-[200px] max-md:w-[300px] max-lg:mt-10">
+          <div id="carousel">
+            <div class="carousel-item">
+              <img src="./image1.jpg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./image2.png" alt="Image 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./image3.png" alt="Image 3" />
+            </div>
+          </div>
+          <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="max-md:h-[300px] max-sm:h-[200px] max-lg:h-[400px] max-xl:h-[500px]" src="" alt="Modal Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="h-[50vh] bg-[#11847f] w-full">
+      <div class="flex justify-center items-center justify-evenly h-full w-full max-sm:flex-col max-md:flex-col">
+        <div class="flex flex-col justify-center items-center text-[#ffff01] font-mono font-bold tracking-tight">
+          <h1 class="text-[9rem] mb-0 leading-none max-sm:text-[3rem] max-md:text-[4rem] max-lg:text-[4rem] max-xl:text-[5.5rem]">Contact</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-6">
+          <div class="w-full text-white text-lg font-medium tracking-wide">
+            <p class="text-2xl text-white">+91 93536 64358</p>
+          </div>
+          <div class="w-full text-white text-lg font-medium tracking-wide">
+            <p class="text-2xl text-white">gayathriupadhya604@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.getElementById("carousel");
+    const textContainer = document.getElementById("text-container");
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+    let currentIndex = 0;
+    let isZoomed = false;
+
+    function updateText() {
+  switch (currentIndex) {
+    case 0:
+      textContainer.innerHTML =
+        '<span class="block text-[1.5rem] max-md:text-lg font-bold">Instagram Post (Internship)</span> Work done at Pink Lemonade for Barbeque Nation\'s Instagram page. Part of a father\'s day post.';
+      break;
+    case 1:
+      textContainer.innerHTML =
+        '<span class="block text-[1.5rem] max-md:text-lg font-bold">Book Cover Redesign</span> Redesigned the cover of the book "Fight Club" using expressive typography for college.';
+      break;
+    case 2:
+      textContainer.innerHTML =
+        '<span class="block text-[1.5rem] max-md:text-lg font-bold">Glossary Book</span> Collection of few pages from a glossary book on the post impressionism art era';
+      break;
+    // Add more cases for additional images
+  }
+}
+
+// Call the updateText function to set the initial text content
+updateText();
+
+
+    function showImage(index) {
+      currentIndex = index;
+      updateText();
+      const newPosition = -index * 100 + "%";
+      carousel.style.transform = "translateX(" + newPosition + ")";
+      modalImage.src = carousel.children[currentIndex].firstElementChild.src;
+    }
+
+    // Function to handle click on the image for zoom
+    carousel.addEventListener("click", () => {
+      if (isZoomed) {
+        isZoomed = false;
+        modal.style.display = "none";
+      } else {
+        isZoomed = true;
+        modalImage.src =
+          carousel.children[currentIndex].firstElementChild.src;
+        modal.style.display = "block";
+      }
+    });
+
+    // Function to handle click on the modal for zoom out
+    modal.addEventListener("click", () => {
+      if (isZoomed) {
+        isZoomed = false;
+        modal.style.display = "none";
+      }
+    });
+
+    // Automatic slide change (you can modify this for your needs)
+    setInterval(() => {
+      if (!isZoomed) {
+        currentIndex = (currentIndex + 1) % 3; // Assuming 3 images
+        showImage(currentIndex);
+      }
+    }, 3000); // Change image every 3 seconds
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Optional: Show visible scroll indicator when scrolling
+      window.addEventListener("scroll", () => {
+        const scrollIndicator = document.getElementById("scroll-indicator");
+        const scrollPosition = window.scrollY;
+
+        // Set the opacity based on scroll position
+        scrollIndicator.style.opacity = scrollPosition > 100 ? "1" : "0";
+      });
+    });
+  </script>
+</body>
+
+</html>
